@@ -19,5 +19,5 @@ image=ImageOps.fit(image,size,Image.ANTIALIAS)
 img=np.asarray(image)
 img_reshape=img[np.newaxis,...]
 st.image(img_reshape, caption='your mri image')
-predict=model(file_upload)
-st.write('predict')
+prediction=model.predict(img_reshape)
+st.write('prediction')
