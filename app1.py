@@ -22,4 +22,4 @@ st.image(img_reshape, caption='your mri image')
 prediction=model.predict(img_reshape)
 class_names=['cats','dogs']
 string=class_names[np.argmax(prediction)]
-st.success('string')
+st.success(string)
