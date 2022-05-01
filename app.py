@@ -20,7 +20,7 @@ def main():
      st.write(result)
      st.pyplot(figure)
 def predict_class(image):
-     classifier_model=tf.keras.models.load_model('cnn.h5')
+     classifier_model=tf.keras.models.load_model('neural_networks.h5')
      shape={(100,100,3)}
      tf.keras.Sequential(hub[hub.KerasLayer(classifier_model,input_shape=shape)])
      test_image=image.resize((128,128))
