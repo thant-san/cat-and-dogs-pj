@@ -20,4 +20,6 @@ img=np.asarray(image)
 img_reshape=img[np.newaxis,...]
 st.image(img_reshape, caption='your mri image')
 prediction=model.predict(img_reshape)
-st.write('prediction')
+class_names=['cats','dogs']
+string=class_names[np.argmax(prediction)]
+st.success('string')
