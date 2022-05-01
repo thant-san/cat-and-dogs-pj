@@ -2,7 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from PIL import Image,ImageOps
 import numpy as np
-st.sidebar.write("Setting")
+#st.sidebar.write("Setting")
 
 
 st.title("brain tumer classification",)
