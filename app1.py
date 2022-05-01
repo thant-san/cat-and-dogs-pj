@@ -14,7 +14,7 @@ st.header("insert ur  image",)
 file_upload=st.file_uploader("choose the mri file",type=['jpg','png','jpeg'])
 
 image = Image.open(file_upload)
-size=(180,180)
+size=(28,28)
 image=ImageOps.fit(image,size,Image.ANTIALIAS)
 img=np.asarray(image)
 img_reshape=img[np.newaxis,...]
