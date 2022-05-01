@@ -8,7 +8,7 @@ import numpy as np
 st.title("brain tumer classification",)
 st.header("insert ur mri image",)
 
-showfileUploaderEncoding = False
+st.set_option('deprecation.showfileUploaderEncoding', False)
 file_upload=st.file_uploader("choose the mri file",type=['jpg','png','jpeg'])
 
 image = Image.open(file_upload)
