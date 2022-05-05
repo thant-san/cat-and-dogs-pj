@@ -24,5 +24,5 @@ class_names=['cats','dogs']
 string=class_names[np.argmax(prediction)]
 st.success(string)
 with st.expander("SEE MORE"):
-     option=st.selectbox('select'.('1','2','3'))
+     option=st.selectbox('select',('1','2','3'))
      st.write('u selected',option)
